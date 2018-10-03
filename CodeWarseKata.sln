@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{711F2909-904A-43F5-9D55-5B88ECC879A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWarsKata", "Testing\CodeWarsKata.csproj", "{711F2909-904A-43F5-9D55-5B88ECC879A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodewarsKata.tests", "Testing.Tests\CodewarsKata.tests.csproj", "{538F9BEC-F29A-4960-A604-751A4EFEF79E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{711F2909-904A-43F5-9D55-5B88ECC879A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711F2909-904A-43F5-9D55-5B88ECC879A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711F2909-904A-43F5-9D55-5B88ECC879A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538F9BEC-F29A-4960-A604-751A4EFEF79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538F9BEC-F29A-4960-A604-751A4EFEF79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538F9BEC-F29A-4960-A604-751A4EFEF79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538F9BEC-F29A-4960-A604-751A4EFEF79E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
