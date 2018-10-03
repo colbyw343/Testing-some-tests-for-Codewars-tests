@@ -91,5 +91,22 @@ namespace Testing.Tests
             string actual = numberToString8.NumberToString(num);
             Assert.Equal(actual, str);
         }
+
+        //4 6Kyu Kata
+
+
+
+        //1 5Kyu Kata
+        [Theory]
+        [InlineData(255,255,255, "FFFFFF")]
+        [InlineData(255, 255, 300, "FFFFFF")]
+        [InlineData(0,0,0,"000000")]
+        [InlineData(148, 0, 211,"9400D3")]
+        public void RGBtoHex(int r, int g, int b, string hex)
+        {
+            Kata rgbToHex5 = new Kata();
+            string actual = rgbToHex5.RGBToHex(r, g, b);
+            Assert.Equal(actual, hex);
+        }
     }
 }
