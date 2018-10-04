@@ -93,7 +93,43 @@ namespace Testing.Tests
         }
 
         //4 6Kyu Kata
+        [Theory]
+        [InlineData("breakThisCase", "break This Case")]
+        [InlineData("thisShouldBeSpaced", "this Should Be Spaced")]
+        public void BreakCamelCase(string original, string expected)
+        {
+            Kata breakCamelCase6 = new Kata();
+            string actual = breakCamelCase6.BreakCamelCase(original);
+            Assert.Equal(actual, expected);
+        }
 
+        [Theory]
+        [InlineData(new int[] { 1,2,3,4,5}, new int[] {1,2,7,8,9}, new int[] {3,4,5})]
+        public void ArrayDiff(int[] first, int[] second, int[] expected)
+        {
+            Kata arrayDiff6 = new Kata();
+            int[] actual = arrayDiff6.ArrayDiff(first, second);
+            Assert.Equal(actual, expected);
+        }
+
+        [Theory]
+        [InlineData(18, 60)]
+        public void MultiplesOf3or5(int value, int expected)
+        {
+            Kata multiples6 = new Kata();
+            int actual = multiples6.Multiples3or5(value);
+            Assert.Equal(actual, expected);
+        }
+
+        [Theory]
+        [InlineData("This should be backwards", "This dluohs be sdrawkcab")]
+        [InlineData("This is a sentence", "This is a ecnetnes")]
+        public void ReverseWords(string sentence, string expected)
+        {
+            Kata reverseString6 = new Kata();
+            string actual = reverseString6.ReverseWords(sentence);
+            Assert.Equal(actual, expected);
+        }
 
 
         //1 5Kyu Kata
